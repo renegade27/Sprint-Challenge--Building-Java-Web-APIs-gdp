@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries By GDP</title>
+</head>
+<body width="100vw" margin="0 auto">
+<table margin="0 auto" border="1">
+    <tr>
+        <th>Country</th>
+        <th>GDP</th>
+    </tr>
+    <tr th:each="country : ${countryList}">
+        <td th:text="${country.name}">Breed</td>
+        <td th:text="${country.gdp}">Weight</td>
+    </tr>
+</table>
+<strong><a margin="0 auto" href="/">Click here to go back</a></strong>
+</body>
+</html>
